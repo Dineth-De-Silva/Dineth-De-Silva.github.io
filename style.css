@@ -1,0 +1,35 @@
+nav {
+  background-color: #e3f2fd;
+}
+
+footer {
+  background-color: #e3f2fd;
+  color: black;
+  padding: 10px;
+}
+
+#Up {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+#Top {
+  text-align: center;
+}
+
+#Platforms {
+  text-align: center;
+}
+
+.Area {
+  display: flex;
+  overflow: auto;
+}
+
+.Scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}

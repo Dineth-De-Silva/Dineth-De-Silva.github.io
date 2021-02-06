@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+  <!--bootstrap-icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!--Custom-->
+  <link rel="stylesheet" href="style.css" />
+  <script src="NewApp.js"></script>
+
+  <link rel="icon" href="favicon.ico" />
+  <title>Product Store</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <!--Firebase-->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-database.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyD28BLX5o0ONEP0XGxylpZWcqqrmGBQCdU",
+      authDomain: "product-store-a7e75.firebaseapp.com",
+      projectId: "product-store-a7e75",
+      storageBucket: "product-store-a7e75.appspot.com",
+      messagingSenderId: "870559120121",
+      appId: "1:870559120121:web:89aeda07d83847afc14028",
+      measurementId: "G-Z1VW345WJV"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <!--Header-->
+  <header>
+    <!--Up button-->
+    <div id="Up">
+      <a href="#Top"><img src="Assets/Up.svg" height="35px" width="35px" alt="Up" /></a>
+    </div>
+    <!--Nav Bar-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <!--Brand-->
+        <a class="navbar-brand" href="https://dineth-de-silva.github.io/">
+          <img class="d-inline-block align-top" style="margin-right: 10px" src="Assets/Logo.jpg" width="30" height="30"
+            alt="Logo" />
+          Product Store
+        </a>
+        <!--Toggler for mobile-->
+        <button class="navbar-toggler"
+          style="border-radius: 10px; padding-top: 1px; padding-bottom: 1px; padding-left: 2px; padding-right: 2px"
+          type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Content-->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </ul>
+          <!--Search form-->
+          <form class="d-flex">
+            <input class="form-control me-2" style="border-radius: 50px" type="search" placeholder="Product name"
+              aria-label="Search" />
+            <button class="btn btn-dark btn-sm" style="border-radius: 50px" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--About Plain-->
+    <div id="Top" class="shadow p-3 mb-5 bg-white rounded">
+      <img src="Assets/Logo.jpg" style="border-radius: 50%;" height="150px" />
+      <img src="Assets/Face.jpg" alt="Face" height="100px" style="border-radius: 50%" />
+      <h2>Hello, I'm Dineth</h2>
+      <p>I'm still a student learning<br />software development.<br /><b>All the apps in prduct store are <span
+            class="badge rounded-pill bg-success">free</span> and were developed by me</b></p>
+    </div>
+  </header>
+  <!--Main-->
+  <main style="margin: 15px">
+    <section>
+      <h1 style="margin-left: 30%;width: 40%;height: 125px;text-align: left">I make apps for <span id="Bg"
+          class="badge rounded-pill bg-dark">Any</span>
+        using
+        <b><u id="Bg1">Any</u></b>
+      </h1>
+      <script src="badges.js"></script>
+    </section>
+    <section>
+      <!--Apps
+
+        Name,
+        Sub,
+        Desc,
+        Lic,
+        Plat,
+          File,
+        Web,
+        OpenS,
+        For Android,
+          ps
+
+      -->
+      <!--Windows-->
+      <h2 id="WindowsApp">Windows</h2>
+      <div class="Area">
+        <div id="Windows" class="Scroll" style="width: 100%;">
+          <div style="position: absolute;" class=" spinner-grow text-dark" role="status">
+            <span class=" visually-hidden">Loading...</span>
+          </div>
+          <img height="100px" src="Assets/Loading.svg" />
+        </div>
+      </div>
+      <script>
+        var Visited = false;
+        var App;
+        firebase.database().ref('Apps/Windows').once('value', function (snapshot) {
+          snapshot.forEach(childsnapshot => {
+            var Windows = document.getElementById("Windows");
+            Windows.style = "";
+            if (!Visited) {
+              Windows.innerHTML = "";
+              Visited = true;
+            }
+            App = new NewApp(childsnapshot.val().Name);
+          });
+        });
+      </script>
+      <!--Android-->
+      <h2 id="AndroidApp">Android</h2>
+      <div class="Area">
+        <div id="Android" class="Scroll" style="width: 100%;">
+          <div style="position: absolute;" class=" spinner-grow text-dark" role="status">
+            <span class=" visually-hidden">Loading...</span>
+          </div>
+          <img height="100px" src="Assets/Loading.svg" />
+        </div>
+      </div>
+      <script>
+      </script>
+      <!--Web-->
+      <h2 id="WebApp">Web</h2>
+      <div class="Area">
+        <div id="Web" class="Scroll" style="width: 100%;">
+          <div style="position: absolute;" class=" spinner-grow text-dark" role="status">
+            <span class=" visually-hidden">Loading...</span>
+          </div>
+          <img height="100px" src="Assets/Loading.svg" />
+        </div>
+      </div>
+      <script>
+      </script>
+    </section>
+  </main>
+  <br />
+  <!--Foooter-->
+  <footer>
+    <div style="display: flex">
+      <div style="display: flex; text-align: left; width: 100%"">
+          <div style=" margin: 10px">
+        <h3>DAD</h3>
+        <p>Open Source</p>
+      </div>
+      <img src="Assets/DAD Open Source.jpg" alt="DAD Open Source" height="55px"
+        style="border-radius: 50%; margin-top: 15px" />
+    </div>
+    <div style="width: 100%">
+      <h5 style="margin: 5px; text-align: center">Contact Me</h5>
+      <ul>
+        <li>Tel - <span style="color: gray">+94 71 517 8998</span></li>
+        <li>Email - <span style="color: gray">dadinethdesilva@gmail.com</span></li>
+      </ul>
+    </div>
+    <div style="width: 100%">
+      <h5 style="margin: 5px; text-align: center">Find Me</h5>
+      <img src="Assets/GitHub.png" height="30px" style="margin: 10px;">
+      <img src="Assets/YouTube.png" height="30px" style="margin: 10px;">
+    </div>
+    </div>
+    <div style="text-align: center; font-size: 13px">Copyright (c) 2021 D. A. Dineth De Silva | MIT Licence</div>
+  </footer>
+</body>
+
+</html>
